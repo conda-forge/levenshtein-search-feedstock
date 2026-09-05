@@ -7,11 +7,11 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/Levenshtein_search-{{ version }}.tar.gz
+  url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/Levenshtein_search-{{ version }}.tar.gz
   sha256: 323eb087008ff6ed1fd56c8c0efbedc15ac6fd59966a693556a2f314cd4d02c7
 
 build:
-  number: 2
+  number: 3
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
